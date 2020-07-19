@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+
+  <ion-list>
+    <button ion-item *ngFor="let libraryItem of library" (click)="itemTapped($event, libraryItem)">
+      <img [src]="libraryItem.thumbnailURL ">
+    </button>
+  </ion-list>
+  
+
+</ion-content>
